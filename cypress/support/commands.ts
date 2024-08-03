@@ -7,11 +7,11 @@ Cypress.Commands.add("getByData", (selector) => {
 
 declare namespace Cypress {
     interface Chainable<Subject> {
-       /**void
+       /**
+        * @returns Chainable<JQuery<HTMLElement>>
         * This will get element
         * @param selector string
-        * 
-        */
+        **/
        getByData(selector: string): Chainable<JQuery<HTMLElement>>;
     }
 }
